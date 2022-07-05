@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: #740d01;
+    /* #740d01 */
+}
+h1 {
+    color: #ffd665;
+    margin-bottom: 30px;
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#charactersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 20px;
+}
+.teste{
+    background-color: red;
+}
+.character {
+    list-style-type: none;
+    min-height: 130px;
+    height: 12vh;
+    background-color: #eaeaea;
+    box-shadow: rgba(10, 10, 10, 0.428) 3px 2px 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name  image'
+        'house image'
+        'gender image';
+    text-align: left;
+}
+
+.character > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.house {
+    grid-area: house;
+
+}
+.gender{
+    grid-area: gender;
+
+}
+
+.character > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+#searchBar{
+    box-shadow: rgba(102, 102, 102, 0.428) 2px 1px 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+
+#searchWrapper {
+    border: none;
+}
+
+#searchWrapper input:focus {
+    font-family: "Montserrat";
+    border: none;
+    outline: none;
+}
+
+
+
+
